@@ -1,8 +1,5 @@
-const moneyFormatter = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-});
+import { formatFakeDollars } from "@/lib/fake-money";
 
 export function formatFakeBalance(balanceCents: number): string {
-  return `${moneyFormatter.format(balanceCents / 100)} fake`;
+  return formatFakeDollars(balanceCents);
 }
