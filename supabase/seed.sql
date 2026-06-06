@@ -1,0 +1,1 @@
+-- Workshop seed data (markets, etc.) can be added in a later step.
